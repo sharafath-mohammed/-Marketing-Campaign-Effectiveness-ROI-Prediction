@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project analyzes marketing campaign performance using **SQL, Python, and Power BI**. It explores campaign effectiveness, evaluates key performance indicators (KPIs), identifies the best-performing campaigns and channels, and predicts future revenue using a Linear Regression model.
+This project analyzes marketing campaign performance using **SQL, Python, and Power BI**. It explores campaign effectiveness, evaluates key performance indicators (KPIs), identifies the best-performing campaigns and categories, and predicts future revenue using a Linear Regression model.
 
 ---
 
@@ -18,7 +18,12 @@ This project analyzes marketing campaign performance using **SQL, Python, and Po
 
 ## Dataset
 
-The dataset contains the following columns:
+The project uses the **Analyze the Marketing Spending** dataset from Kaggle. The dataset contains marketing campaign information, including campaign details, impressions, marketing spend, clicks, leads, orders, revenue, and ROI, making it suitable for marketing analytics and predictive modeling.
+
+**Dataset Source:**
+[Analyze the Marketing Spending – Kaggle Dataset](https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending?resource=download&utm_source=chatgpt.com)
+
+### Dataset Columns
 
 * `id`
 * `campaign_date`
@@ -72,12 +77,7 @@ The dataset contains the following columns:
 * Linear Regression
 * Train-test split
 * Revenue prediction
-* Model evaluation using:
-
-  * MAE
-  * MSE
-  * RMSE
-  * R² Score
+* Model evaluation using MAE, MSE, RMSE, and R² Score
 
 ### 4. Power BI Dashboard
 
@@ -105,8 +105,9 @@ The dataset contains the following columns:
 * Identified the campaigns with the highest ROI.
 * Compared marketing categories based on revenue and ROI.
 * Analyzed the relationship between marketing spend and revenue.
-* Built a predictive model for estimating future campaign revenue.
-* Created an interactive dashboard to support business decision-making.
+* Observed a strong positive correlation (**0.7596**) between marketing spend and revenue.
+* Built a Linear Regression model to predict future campaign revenue.
+* Created an interactive Power BI dashboard for business decision-making.
 
 ---
 
@@ -116,7 +117,7 @@ The dataset contains the following columns:
 Marketing-Campaign-Analysis/
 │
 ├── data/
-│   └── Marketing.xlsx
+│   └── Marketing.csv
 │
 ├── sql/
 │   └── Marketing.sql
@@ -127,32 +128,34 @@ Marketing-Campaign-Analysis/
 ├── powerbi/
 │   └── Marketing.pbix
 │
+├── images/
+│   └── dashboard.png
+│
 ├── README.md
-└── requirements.txt
 ```
 
 ---
 
 ## How to Run
 
-1. Clone the repository.
+1. Clone this repository.
 2. Install the required Python libraries:
 
    ```bash
    pip install pandas matplotlib seaborn scikit-learn
    ```
-3. Open the Jupyter Notebook and run the analysis.
-4. Execute the SQL queries using your preferred SQL database.
-5. Open the `.pbix` file in Power BI Desktop to explore the dashboard.
+3. Run the Jupyter Notebook for EDA and Machine Learning.
+4. Execute the SQL scripts to generate business insights.
+5. Open the Power BI `.pbix` file to explore the interactive dashboard.
 
 ---
 
 ## Future Improvements
 
-* Add advanced machine learning models such as Random Forest and XGBoost.
-* Include forecasting for future marketing campaigns.
-* Deploy the project as an interactive web dashboard.
-* Automate data refresh and reporting.
+* Experiment with advanced regression models (Random Forest, XGBoost).
+* Add time-series forecasting for future campaign performance.
+* Deploy the dashboard as a web application.
+* Automate data refresh and reporting pipelines.
 
 ---
 
@@ -160,4 +163,4 @@ Marketing-Campaign-Analysis/
 
 **Sharafath Mohammed**
 
-If you found this project useful, feel free to ⭐ the repository.
+If you found this project helpful, consider giving it a ⭐ to support the repository.
